@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>关于我 - Xu Jiayu's Tech Blog</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">Xu Jiayu's Tech Blog</a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">首页</a></li>
+        <li><a href="blog.html" class="nav-link">博客</a></li>
+        <li><a href="projects.html" class="nav-link">项目</a></li>
+        <li><a href="about.html" class="nav-link">关于我</a></li>
+      </ul>
+
+      <button id="themeToggle" class="theme-btn" type="button">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">About</p>
+      <h1>关于徐佳豫</h1>
+      <p>记录学习路径、技术方向与项目实践。</p>
+    </section>
+
+    <section class="section about-grid">
+      <div class="about-card">
+        <h2>个人介绍</h2>
+        <p>
+          你好，我是徐佳豫，深圳大学计算机学院学生。关注Web开发、信息检索、计算机视觉与多媒体技术，
+          喜欢通过课程项目把理论知识转化为可运行的系统与作品。这个网站记录我的技术学习、项目开发过程与阶段性思考。
+        </p>
+
+        <h3>学习方向</h3>
+        <div class="tag-row large">
+          <span>Web前端开发</span>
+          <span>信息检索</span>
+          <span>计算机视觉</span>
+          <span>多媒体系统</span>
+          <span>用户交互设计</span>
+        </div>
+
+        <h3>联系方式</h3>
+        <ul class="contact-list">
+          <li>GitHub：<a href="https://github.com/XE929" target="_blank">https://github.com/XE929</a></li>
+          <li>Email：<a href="mailto:jiayu@example.com">jiayu@example.com</a></li>
+        </ul>
+      </div>
+
+      <div class="about-card">
+        <h2>GitHub Profile</h2>
+        <div id="githubProfile" class="github-card">
+          <p>正在加载GitHub信息...</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <p class="eyebrow">Message Board</p>
+        <h2>简易留言板</h2>
+      </div>
+
+      <div class="message-board">
+        <div class="message-form">
+          <input id="nicknameInput" class="input" type="text" placeholder="请输入昵称" />
+          <textarea id="messageInput" class="input textarea" placeholder="请输入留言内容"></textarea>
+          <button id="submitMessage" class="btn primary-btn" type="button">提交留言</button>
+          <p id="messageTip" class="form-tip"></p>
+        </div>
+
+        <div id="messageList" class="message-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Xu Jiayu. All rights reserved.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/message.js"></script>
+</body>
+</html>

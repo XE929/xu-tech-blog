@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xu Jiayu's Tech Blog</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">Xu Jiayu's Tech Blog</a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">首页</a></li>
+        <li><a href="blog.html" class="nav-link">博客</a></li>
+        <li><a href="projects.html" class="nav-link">项目</a></li>
+        <li><a href="about.html" class="nav-link">关于我</a></li>
+      </ul>
+
+      <button id="themeToggle" class="theme-btn" type="button">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero fade-in">
+      <div class="hero-text">
+        <p class="eyebrow">深圳大学计算机学院 · 技术学习记录</p>
+        <h1>你好，我是徐佳豫</h1>
+        <h2 id="typewriter" class="typewriter"></h2>
+        <p class="hero-desc">
+          我关注Web开发、信息检索、计算机视觉与多媒体技术，喜欢通过课程项目把理论知识转化为可运行的系统与作品。
+          这个网站记录我的技术学习、项目开发过程与阶段性思考。
+        </p>
+
+        <div class="hero-actions">
+          <a href="blog.html" class="btn primary-btn">阅读博客</a>
+          <a href="projects.html" class="btn secondary-btn">查看项目</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="avatar-wrap">
+          <img src="images/avatar.jpg" alt="徐佳豫头像" onerror="this.style.display='none'; this.parentElement.classList.add('avatar-placeholder');" />
+        </div>
+        <h3>Xu Jiayu</h3>
+        <p>Computer Science Student</p>
+        <div class="tag-row">
+          <span>Web</span>
+          <span>IR</span>
+          <span>CV</span>
+          <span>Multimedia</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <p class="eyebrow">Latest Posts</p>
+        <h2>最新博客</h2>
+      </div>
+
+      <div id="latestPosts" class="card-grid"></div>
+    </section>
+
+    <section class="section feature-section">
+      <div class="feature-card">
+        <h2>这个网站记录什么？</h2>
+        <p>
+          这里主要整理课程项目、技术实践和开发复盘，包括信息检索系统开发、计算机视觉实验、多媒体系统导论作业以及Web前端学习过程。
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <h2>为什么这样设计？</h2>
+        <p>
+          网站采用薄荷色与白色为主的简洁风格，通过卡片布局、标签筛选、主题切换和动态内容渲染，提升浏览体验与交互感。
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Xu Jiayu. All rights reserved.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

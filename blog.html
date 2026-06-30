@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>博客列表 - Xu Jiayu's Tech Blog</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">Xu Jiayu's Tech Blog</a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">首页</a></li>
+        <li><a href="blog.html" class="nav-link">博客</a></li>
+        <li><a href="projects.html" class="nav-link">项目</a></li>
+        <li><a href="about.html" class="nav-link">关于我</a></li>
+      </ul>
+
+      <button id="themeToggle" class="theme-btn" type="button">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">Blog</p>
+      <h1>技术博客</h1>
+      <p>整理课程项目、开发过程与技术思考。</p>
+    </section>
+
+    <section class="section blog-layout">
+      <aside class="blog-sidebar">
+        <div class="panel">
+          <h3>搜索文章</h3>
+          <input id="searchInput" class="input" type="text" placeholder="搜索标题或摘要..." />
+        </div>
+
+        <div class="panel">
+          <h3>分类筛选</h3>
+          <div id="categoryFilters" class="filter-list"></div>
+        </div>
+
+        <div class="panel">
+          <h3>排序方式</h3>
+          <select id="sortSelect" class="input">
+            <option value="desc">日期从新到旧</option>
+            <option value="asc">日期从旧到新</option>
+          </select>
+        </div>
+
+        <div class="panel">
+          <h3>分类统计</h3>
+          <canvas id="categoryChart" width="280" height="220"></canvas>
+        </div>
+      </aside>
+
+      <section class="blog-main">
+        <div id="postCount" class="result-count"></div>
+        <div id="postList" class="post-list"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Xu Jiayu. All rights reserved.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/blog.js"></script>
+</body>
+</html>
